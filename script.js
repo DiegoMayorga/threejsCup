@@ -1,6 +1,6 @@
-import * as THREE from '../module/three.module.js'
-import { GLTFLoader } from '../module/GLTFLoader.js'
-import { OrbitControls } from '../jsm/OrbitControls.js'
+import * as THREE from './module/three.module.js'
+import { GLTFLoader } from './module/GLTFLoader.js'
+import { OrbitControls } from './jsm/OrbitControls.js'
 
 const scene = new THREE.Scene()
 scene.background = new THREE.Color(0x333333)
@@ -36,7 +36,7 @@ scene.add(camera)
 
 const loader = new GLTFLoader()
 
-loader.load("../cup.glb", function(gltf){
+loader.load("./cup.glb", function(gltf){
     const model = gltf.scene
     scene.add(model)
 })
