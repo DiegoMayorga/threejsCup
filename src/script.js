@@ -36,7 +36,7 @@ scene.add(camera)
 
 const loader = new GLTFLoader()
 
-loader.load("../assests/cup.glb", function(gltf){
+loader.load("../cup.glb", function(gltf){
     const model = gltf.scene
     scene.add(model)
 })
